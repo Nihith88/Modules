@@ -7,10 +7,36 @@ Python позволяет нам поместить классы, функции
 Встроенные модули: math, random... сторонний Django, PyQt5, свои (py файл)
 
 import math (либо import math as mt
-from math import sin,cos
+from math import sin
+
 """
+# модуль math содержит математические функции, инструменты работы с числами
+# factorial, exp, log, log2, log10, sqrt, sin, cos, asin, acos...
 
+# найти длину окружности  с опред. радиусом
+"""
 import math
-from random import randint, randrange
-print(math.pi)
+rad = float(input('Введите радиус окружности: '))
+print('Длина окружности составляет ', 2*math.pi*rad, 'ед.')
+print('Площадь круга составляет ', math.pi*rad**2, ' кв. ед.')
+print(math.factorial(9))
+x1 = 2.8
+y1 = -6.3
+x2 = -5.6
+y2 = 6.2
+l = math.sqrt((x1-x2)**2+(y1-y2)**2)  # Расстояниее междудвумя точками
+print(l)
+"""
+import random
 
+#  Модуль Random - генерация случайных чисел, элементов последовательностей, символов
+#  randint, choice (случайный элемент последовательности), shuffle (перемешать последовательность)
+#  random (случ. число от 0 до 1) sample (список длиной k из последователности)
+
+print(random.randint(0, 100))
+players = ['max', 'leo', 'kate', 'jenn']
+cards = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+print(random.choice(players))
+print(random.sample(players, 2))
+random.shuffle(cards)
+print(cards)
