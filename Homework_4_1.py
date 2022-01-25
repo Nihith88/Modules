@@ -5,10 +5,7 @@
 
 from random import choice
 
-my_list = []
 
 def rand_el(my_list):
-    if len(my_list) == 0:
-        el = None
-    else:
+    if my_list:
         return choice(my_list)
