@@ -7,8 +7,7 @@ Python позволяет нам поместить классы, функции
 Встроенные модули: math, random... сторонний Django, PyQt5, свои (py файл)
 
 import math (либо import math as mt
-from math import sin
-
+from math import sin,cos
 """
 # модуль math содержит математические функции, инструменты работы с числами
 # factorial, exp, log, log2, log10, sqrt, sin, cos, asin, acos...
@@ -36,7 +35,16 @@ import random
 print(random.randint(0, 100))
 players = ['max', 'leo', 'kate', 'jenn']
 cards = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
+
 print(random.choice(players))
 print(random.sample(players, 2))
 random.shuffle(cards)
 print(cards)
+
+"""
+Пакеты - некоторый каталог вкл. в себя некоторые пакеты и модули
+Назначение - формирование пространства имен, работа с модулями с указанием уровня вложенности
+(пакет1.пакет2.модуль) import .модуль (внутри пакета) import пакет1.модуль либо
+import from пакет1.модуль функция
+
+"""
